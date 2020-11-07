@@ -1,8 +1,8 @@
-## Put comments here that give an overall description of what your
-## functions do
+## As per course example, The goal is to set a matrix using 'set' and extract 
+##it using 'get, setinvMatrix would calculate inverse based on x and then getinvMatrix
+## would release this.
 
-## Write a short comment describing this function
-
+##  Finally, list at the end to allow accessing via $.
 makeCacheMatrix <- function(x = matrix()) {
       m <- NULL
       set <- function(y) {
@@ -18,7 +18,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## In this function, inv objective is used to get the matrix and if cached,
+## the function is designed to return cached data and if not ,it will calculate
+## as well as set and then return a calculated inverse matrix.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
